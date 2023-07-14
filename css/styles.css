@@ -1348,11 +1348,11 @@ section {
        padding-right: 118px;
     }
 }
-
+/*
 .button-items {
     width: calc((100% - 48px)/ 3 );
 }
-
+*/
 
 @media only screen and (min-width: 768px) {
     .button-list {
