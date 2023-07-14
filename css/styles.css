@@ -52,9 +52,10 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-
+    /*
     outline: 2px solid red;
     outline-offset: -2px;
+    */
 }
 
 /*Tablet screen*/
@@ -268,7 +269,7 @@ section {
 .section-hero {
     position: relative;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/people-office1.jpg);
+        url(../images/img-main/people-office@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -277,6 +278,13 @@ section {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/img-main/people-office@2x.jpg);;
+    }
 }
 
 .div-hero {
@@ -1336,7 +1344,8 @@ section {
 
 @media only screen and (max-width: 767px) {
     .button-list {
-        max-width: 263px;
+       max-width: 396px;
+       padding-right: 120px;
     }
 }
 
